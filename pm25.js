@@ -1,7 +1,7 @@
-const apiUrl = 'https://air-quality-api.open-meteo.com/v1/air-quality?latitude=52.52&longitude=13.41&hourly=pm2_5';
-const outputElement = document.getElementById('output25');
+const apiUrl25 = 'https://air-quality-api.open-meteo.com/v1/air-quality?latitude=52.52&longitude=13.41&hourly=pm2_5';
+const outputElement25 = document.getElementById('output25');
 
-fetch(apiUrl)
+fetch(apiUrl25)
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
