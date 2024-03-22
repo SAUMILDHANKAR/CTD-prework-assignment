@@ -13,7 +13,7 @@ function pm25Data() {
     })
     .then(data => {
       // Display data in an HTML element
-      document.getElementById('output25P').innerText += data.hourly.pm2_5;
+      document.getElementById('output25P').innerText += data.hourly.pm2_5.splice(15,60);
       //console.log(data.hourly.pm2_5)
     })
     .catch(error => {
