@@ -2,7 +2,7 @@
 
 This project uses data from openmeteum.com
 
-To run this project use the following methods
+To run this project use the following method
 
 Method 1
 1) Download the entire repo to your local machine
