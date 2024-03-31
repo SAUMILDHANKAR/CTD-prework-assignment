@@ -14,14 +14,11 @@ function pm25Data() {
     .then(data => {
       // Display data in an HTML element
       document.getElementById('output25P').style.display = "inline";
-      
-      document.getElementById('output25P').innerText = "pm2.5 for last 10 hrs => " + data.hourly.pm2_5.splice(0,10);
+      document.getElementById('output25P').innerText = "pm2.5 for current hour and forecast for next 9 hrs =><br>" + data.hourly.pm2_5.splice(0,10);
       document.getElementById('output').innerText = null;
       document.getElementById('output25').innerText = null;
       document.getElementById('output25').style.display = "none";
       document.getElementById('output10').style.display = "inline";
-
-      //console.log(data.hourly.pm2_5)
     })
     .catch(error => {
       console.error('Error:', error);
