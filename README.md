@@ -1,7 +1,8 @@
 # CTD-prework-assignment
 
 This project uses data from https://open-meteo.com/
-One can see pm2.5 and pm10 values for last 10 hrs for the location ()
+
+One can see pm2.5 and pm10 values for last 10 hrs for the location (Latitude 52.52, Longitude 13.41)
 
 To run this project use the following method:
 
