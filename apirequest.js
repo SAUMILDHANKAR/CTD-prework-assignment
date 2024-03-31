@@ -13,7 +13,7 @@ fetch(apiUrl)
   .then(data => {
     // Display data in an HTML element
     document.getElementById('output').style.display = "inline";
-    document.getElementById('output').innerText = "pm10 values for current hour and forecast for next 9 hrs => <br>" + data.hourly.pm10.splice(0,10);
+    document.getElementById('output').innerText = "pm10 values for current hour and forecast for next 9 hrs => " + data.hourly.pm10.splice(0,10);
     document.getElementById('output25P').innerText = null;
     document.getElementById('output25').style.display = "inline";
     document.getElementById('output25').innerText = "Click for pm25 data";
